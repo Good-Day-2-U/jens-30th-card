@@ -62,3 +62,19 @@ let rRotateCard = function rotateCard(card) {
   insideCard.style.backgroundColor = 'lightcoral';
   console.log("Forward")
 }
+
+
+
+const text = "Baby, you are the greatest person to ever come into my life. Baby, you are the greatest person to ever come into my life. Baby, you are the greatest person to ever come into my life. Baby, you are the greatest person to ever come into my life.";
+const element = document.getElementById("typeEffect");
+let index = 0;
+
+function typeText() {
+  if (index < text.length) {
+    element.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeText, 50); // Adjust the timeout to control typing speed
+  }
+}
+
+// typeText();

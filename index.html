@@ -10,7 +10,13 @@
     <div class="container">
       <div class="card cardFront" onmouseover="rRotateCard(this)">
         <div class="content">
-          <h1>HAPPY BIRTHDAY</h1>
+          <h1 class="title">HAPPY BIRTHDAY</h1>
+          <h2 class="title">Jen, Mom, Babe</h2>
+          <p class="cardCaption">
+            ---As you celebrate another year of life, know that you mean the world to me.
+            You are not just my wife but also my best friend. Happy birthday,
+            and here's to many more wonderful years together!---
+          </p>
 
 
 
@@ -18,14 +24,18 @@
         </div>
       </div>
 
-      <div class="card cardInside" onmouseleave="rResetCard(this)">
+      <div class="card cardInside" onmouseleave="rResetCard(this)" onclick="typeText()">
         <div class="insideContent">
           <div class="sides leftSide">
-            LEFT
-
+            <span id="typeEffect"></span>
+            <span id="cursor">|</span>
           </div>
           <div class="sides rightSide">
-            RIGHT
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
 
           </div>
         </div>

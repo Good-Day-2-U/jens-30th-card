@@ -37,6 +37,36 @@ body {
   align-items: center;
 }
 
+@font-face {
+  font-family: passionsConflict;
+  src: url(PassionsConflict-Regular.ttf);
+}
+
+@keyframes chromaticTitle {
+  0% {color: black;}
+  25% {color: brown;}
+  50% {color: green;}
+  75% {color: blue;}
+  100% {color: red;}
+}
+
+.title {
+  margin-bottom: 7rem;
+  font-size: 50px;
+  line-height: 10%;
+  /* font-style: italic; */
+  font-family:passionsConflict, sans-serif;
+  animation-name: chromaticTitle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.cardCaption {
+  width: 18em;
+  margin-bottom: 7rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 
 .cardInside {
@@ -46,7 +76,7 @@ body {
   z-index: 2;
   top: -25.75rem;
   opacity: 0;
-  transition: opacity 2.5s, transform 2.5s, background-color 10s, width 3s, visibility 1.5s;
+  transition: opacity 2.5s, transform 2.5s, background-color 5s, width 3s, visibility 1.5s;
   rotate: y -90deg;
   z-index: 3;
   visibility: hidden;
@@ -75,5 +105,42 @@ body {
   height: 35rem;
   width: 20rem;
   flex: 1;
+}
+
+.leftSide {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* overflow: hidden;
+  white-space: pre-line;
+  border-right: 2px solid transparent;
+  animation: typewriter 10s steps(28) infinite; */
+}
+
+.rightSide {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* @keyframes typewriter {
+  0% {width: 0;}
+  100% {width: 100%;}
+} */
+
+
+.typeEffect {
+
+}
+
+#cursor {
+  animation: cursor-blink 0.8s infinite;
+  font-weight: 900;
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 

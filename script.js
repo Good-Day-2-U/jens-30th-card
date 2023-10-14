@@ -65,7 +65,7 @@ let rRotateCard = function rotateCard(card) {
 
 
 
-const text = "Baby, you are the greatest person to ever come into my life. Baby, you are the greatest person to ever come into my life. Baby, you are the greatest person to ever come into my life. Baby, you are the greatest person to ever come into my life.";
+const text = "I love you so much baby, you are so many things I wish I was. I know where your mind is going when you hear that, but it's the truth. I want you to take in all of the things you have accomplished in your 30 years on this Earth. (thats also why I made this typewriter effect so you cant skim read)      Baby... YOU beat Cancer, YOU reached the highest level in a martial art, YOU worked your way to the senior position of peretty much any place that gives you an opening to do so! YOU ARE AMAZING! YOU have provided so much for our family. YOU built the house we are living in and growing up in together. YOU gave birth to the most amazing most BEAUTIFUL little girl the worl will ever know. YOU are an absolute gift from heaven, and for me to have you in my life I will never be worthy. I will try everyday to reach that point of worthiness. I LOVE YOU so much Jen Atwood. My wife, My lover, and My Best Friend... Yours Forever Babe";
 const element = document.getElementById("typeEffect");
 let index = 0;
 
@@ -73,8 +73,10 @@ function typeText() {
   if (index < text.length) {
     element.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeText, 50); // Adjust the timeout to control typing speed
+    setTimeout(typeText, 60); // Adjust the timeout to control typing speed
   }
 }
 
 // typeText();
+
+
